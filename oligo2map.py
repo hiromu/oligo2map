@@ -23,6 +23,7 @@ def oligo2map(input_file, output_file):
 if __name__ == '__main__':
     if len(sys.argv) < 3:
         print('Usage: %s [input file] [output file]' % sys.argv[0])
+        sys.exit()
 
     with open(sys.argv[1], 'r') as input:
         with open(sys.argv[2], 'w') as output:
